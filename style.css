@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    /* box-sizing: border-box; */
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(20, 233, 233);
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 2px 3px 4px red; */
+}
+
+.search-bar-container{
+    display: flex;
+    position: relative;
+    height: 25px;
+    background-color: #3344;
+    border-radius: 30px ;
+    width: 300px;
+    padding: 8px 30px;
+    transition: width 1s;
+
+}
+
+.magnifier{
+    width: 26px;
+    position: absolute;
+    left: 20px;
+}
+
+.mic-icon{
+    position: absolute;
+    width: 35px;
+    right: 10px;
+    bottom: 4px;
+}
+
+input{
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    transition: width 1s;
+}
+
+
+.active{
+    width:8px;
+  }
+
+  .active .mic-icon{
+    /* width: 0; */
+    display: none;
+  }
+
+  .active input{
+    width: 0;
+  }
+
+  .abs{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    background-color: #9876;
+    border-radius: 30px;
+    /* width: 300px ; */
+    align-items: center;
+    height: 30px;
+  }
+
+  .abs li{
+    padding: 0 10px 0  10px;
+    
+  }
+  .abs li  a{
+    text-decoration: none;
+  }
+  h1{
+    padding-left: 20px;
+  }
+
+  .backIMG{
+    background-image: url(.//wp8001116-sonic-movie-2-wallpapers.jpg);
+    width: 100%;
+    height: calc(100vh - 50px) ;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #hlw{
+        /* color: rgb(199, 199, 54); */
+        color: rgba(20, 233, 233 ,.6);;
+        width: 30%;
+        height: calc(100vh - 50px);
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 5vw;
+        /* background-color: rgb(99, 99, 224); */
+        padding: 0 20px ;
+        text-shadow: 2px 3px 1px whitesmoke;
+        transition: all .5s;
+    }
